@@ -1,6 +1,8 @@
-// Add interactivity here if needed. For instance:
-document.querySelectorAll('.reason').forEach(item => {
-    item.addEventListener('click', event => {
-        alert(item.querySelector('h2').innerText + ' - Learn more on our detailed pages.');
+document.querySelectorAll('.learn-more').forEach(button => {
+    button.addEventListener('click', event => {
+        const card = button.parentElement;
+        const topic = card.querySelector('h2').innerText;
+        alert(`Learn more about ${topic}.`);
+        // Ideally, replace this with a modal or a link to a detailed page.
     });
 });
