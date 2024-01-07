@@ -1,37 +1,60 @@
 body, html {
-    height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
-.reasons-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-}
-
-.reason {
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    transition: transform 0.5s;
-}
-
-.reason h2 {
+.hero-section {
+    background: #fff url('hero-background.jpg') no-repeat center center/cover;
     color: #333;
+    padding: 2rem;
+    text-align: center;
 }
 
-.reason p {
-    color: #666;
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
 }
 
-#health { background-color: #adebad; }
-#environment { background-color: #ffcc99; }
-#ethical { background-color: #ff9999; }
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
 
-.reason:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #00848c;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-out;
+}
+
+.btn:hover {
+    background: #005f60;
+}
+
+@media screen and (max-width: 700px) {
+    .info-section {
+        grid-template-columns: 1fr;
+    }
 }
