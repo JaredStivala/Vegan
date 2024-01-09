@@ -1,1 +1,43 @@
 
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .animal-kill-counter {
+    list-style: none;
+    padding: 0;
+  }
+
+  .animal-kill-counter li {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .animal-kill-counter li span {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+  }
+
+  h2, h3 {
+    color: #333;
+    text-align: center;
+  }
+
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
